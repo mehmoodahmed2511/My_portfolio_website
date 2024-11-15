@@ -1,0 +1,221 @@
+
+@media (max-width:360px)
+{
+  #navbar #bg{
+    display: none;
+    background-color: green;
+  }
+  #navbar{
+    gap: 50vw;
+    /* margin-top: 5vh; */
+    padding:0vh 4vw;
+    position: fixed;
+    background-color: rgb(166, 253, 233);
+    /* box-shadow: 0vw 0vw 3vw rgb(145, 145, 145); */
+    height:12vh;
+    width:100%;
+  }
+  #navbar #resume-button{
+    width:24vw;
+    font-size: 3vw;
+    border-radius: 4vw;
+  }
+  #menu{
+    display: none;
+    height:32vh;
+    width:100%;
+    position: absolute;
+    box-shadow: 0vw 0vw 4vw rgb(147, 147, 147);
+    z-index: 4;
+    top:3%;
+    padding:4vw 0vw;
+    text-align: center;
+    background-color: rgb(166, 253, 233);
+    transition: all 0.4s ease-in-out;
+  }
+  /* #menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  } */
+#menu li{
+  /* height:3vh; */
+  width:100%;
+  padding:1vh 6vw;
+  margin-bottom: 0.5vw;
+  background-color: rgb(139, 229, 208);
+};
+
+  #front-page{
+    height:365vh;
+  }
+  #front-name-photo{
+    top:20vh;
+    padding:0vh vw;
+    width:70vw;
+    justify-content: space-between;
+  }
+  #profile{
+    width:35vw;
+  }
+  #hello,#name{
+    /* transform:scale(1.8); */
+    font-size:6.5vw;
+    margin:1.5vh 0vw;
+    width:45vw;
+    line-height: 5vh;
+  }
+  #welcome{
+    font-size: 4.8vw;
+    line-height: 4vh;
+  }
+  #front-para{
+    font-size: 4.7vw;
+    line-height: 6vh;
+  }
+  #front-part2{
+    padding:2vh 2vw;
+  }
+  #part2-heading{
+    font-size: 7vw;
+  }
+  #offer-bg{
+    height:60vh;
+    margin:0vw;
+    padding:2vh 0vw;
+    transform: scale(1.4);
+  }
+  #offer-bg h1{
+    font-size: 2.7vw;
+    /* height:4vh; */
+    padding:0vh 3vw;
+    margin-top: 4vh;
+  }
+  #offer-bg img{
+    width:40vw;
+    margin:2vh 2vw;
+  }
+  #front-part2{
+    padding:0vw;
+  }
+  #front-part2 p{
+    font-size: 4.5vw;
+    line-height: 5vh;
+    margin:3vh 0vw;
+    width:60vw;
+    text-align: center;
+  }
+  #front-part2 #heading{
+    padding:0vw;
+    text-align: center;
+  }
+  #contact{
+    height:80vh;
+  }
+  #contact-heading {
+    font-size: 5vw;
+    margin-bottom: 2vh;
+  }
+  #accounts-div{
+    height:10vh;
+    flex-direction: column;
+    align-items: center;
+    gap:2vh;
+    background:none;
+  }
+  #account{
+    height:8vh;
+    flex-direction: row;
+    gap:2vw;
+    justify-content: start;
+    align-items: center;
+  }
+  #account #logo{
+    width:5.5vw;
+  }
+  #account h1{
+    font-size:3vw;
+  }
+
+  #projects{
+    padding:2vh;
+  }
+  #projects-heading{
+    font-size: 7vw;
+  }
+  #images-div{
+    flex-direction: column;
+    height:80vh;
+    margin-top: 4vh;
+  }
+  #project{
+    /* height:120vh; */
+    width:80vw;
+  }
+  #project #title-div{
+    height:8vh;
+  }
+  #project #title{
+    font-size: 3vw;
+    border-radius: 10vw;
+    line-height: 2vh;
+    padding: 1vh 2vh;
+  }
+  #project #project-image{
+    width:65vw;
+    animation: project-image-move 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    scroll-behavior: smooth;
+  }
+  @keyframes project-image-move{
+    from{
+      opacity:0;
+      scale: 0;
+    }
+    to{
+      opacity: 1;
+      scale:1;
+    }
+  }
+
+  #project #visit-btn{
+    font-size: 3vw;
+    height: 3vh;
+    width: 12vw;
+    border-radius: 5vw;
+  }
+  #project #detail{
+    margin:3vh 2vw 2vw 2vw;
+  }
+  #project #point{
+    font-size: 2.5vw;
+    line-height: 3vh;
+  }
+
+  
+  #skills-box{
+    flex-direction: column;
+  }
+  #skills-heading{
+    font-size: 5vh;
+  }
+  #skill #logo{
+    width:8vh;
+  }
+  #skill #react-logo{
+    width:8vh;
+  }
+  #skill #next-logo{
+    width:10vh;
+  }
+  #skill #para{
+    width:70vw;
+    padding:6vw 6vw;
+    font-size: 2.6vh;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+}

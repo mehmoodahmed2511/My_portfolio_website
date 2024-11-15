@@ -13,56 +13,78 @@ html, body{
 }
 body{
   /* background:linear-gradient(160deg,rgb(167, 254, 236) 6em,white 44em); */
+  font-family: 'Century Gothic';
 }
 /* FRONT PAGE */
 #navbar{
   display: flex;
   justify-content: center;
   align-items: center;
+  position:fixed;
   position: absolute;
   z-index: 2;
-  left:50%;
+  /* background-color: rgb(167, 254, 236); */
+  left:50%; 
   transform: translateX(-50%);
   
 }
-#navbar #bg-1{
-  height:10.5vh;
-  width:56.5vw;
-  border-radius: 10vw;
-  background-color: rgba(255, 255, 255, 0.377);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8vh;
+#menu-button{
+  display: none;
 }
-#navbar #bg-2{
-  height:8vh;
-  width:55vw;
+#navbar #bg{
+  height:9vh;
+  width:48vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4vw;
+  gap: 3vw;
+  margin: 8vh;
   border-radius: 10vw;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0vw 0vw 0.5vw rgba(215, 215, 215, 0.597);
+  /* border: 0.15vw solid rgb(135, 228, 219); */
+  box-shadow: 0vw 0vw 0.9vw rgba(184, 184, 184, 0.731);
 }
-#navbar #bg-2 #link{
-  font-size:1.3vw;
-  padding:0.4vh 1.4vw;
+#navbar #bg #link{
+  font-size:1.20vw;
+  padding:0.3vh 1vw;
+  text-align: center;
+  height:4.2vh;
+  width:6.5vw;
   border-radius: 2vw;
   transition:all 0.4s ease-in-out;
-  /* font-weight: 700; */
   font-family: 'Heebo';
+  /* font-weight: 500; */
   color:rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0vw 0vw 0.5vw rgb(221, 221, 221);
 }
-#navbar #bg-2 #link:hover{
-  background-color: rgb(200, 252, 246);
-  /* box-shadow: 0vw 0vw 0.5vw rgb(215, 215, 215); */
+#navbar #bg #link:hover{
+  /* background-color: rgb(234, 255, 253); */
+  box-shadow: 0vw 0vw 0.5vw rgb(229, 229, 229);
+  font-weight: bold;
   transition: 0.2s;
+}
+#navbar #resume-button{
+  height:6vh;
+  width:9vw;
+  padding:1vh 0vw;
+  border-radius: 0.5vw;
+  font-size:1.1vw;
+  text-align: center;
+  background: linear-gradient(90deg,rgb(82, 82, 82),rgb(39, 39, 39));
+  box-shadow: 0vw 0vw 0.3vw rgb(178, 178, 178);
+  color:white;
+  transition: all 0.3s;
+}
+#navbar #resume-button:hover{
+  background: linear-gradient(90deg,rgb(39, 39, 39),rgb(39, 39, 39));
+}
+#menu{
+  display: none;
 }
 
 #front-page{
-  height:100vh;
+  height:310vh;
   width:100%;
   background:linear-gradient(160deg,rgb(167, 254, 236) 6em,white 44em);
   position: relative;
@@ -79,10 +101,10 @@ body{
 @keyframes front-left-circle-move{
   0%{
       margin-top: 6vh;
-      opacity:0%;
+      opacity:00%;
   }
   20%{
-      opacity:20%;
+      opacity:50%;
 
   }
   100%{
@@ -92,11 +114,11 @@ body{
 }
 #front-right-circle{
   position: absolute;
-  width:24vw;
-  opacity:100%;
-  margin-left: 61vw;
-  margin-top: 22.5vh;
-  animation: front-right-circle-move 30s linear infinite;
+  width:22vw;
+  opacity:40%;
+  margin-left: 59.6vw;
+  margin-top: 28.8vh;
+  /* animation: front-right-circle-move 10s linear infinite; */
 }
 @keyframes front-right-circle-move{
   from{
@@ -109,9 +131,9 @@ body{
 #front-name-photo{
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   position: absolute;
-  top:28%;
+  top:30vh;
   transform: translateY(-50%);
   left:50%;
   transform:translateX(-50%);
@@ -122,34 +144,115 @@ body{
   font-family: 'Heebo';
 }
 #profile{
-  width:15vw;
+  width:20vw;
   border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+#profile:hover{
+  /* width:17vw; */
+  transform: scale(1.1);
 }
 #hello{
   font-size: 3.5vw;
   font-weight: bold;
+  font-family: "Century Gothic";
+}
+#welcome{
+  font-size: 2.2vw;
+  font-family: "Century Gothic";
+  animation: welcome-move linear 3s;
+}
+#name{
+  font-size: 2.8vw;
+  font-weight: bold;
+  font-family: "Century Gothic";
 }
 
 #front-para{
   position: absolute;
-  top:70%;
+  top:73vh;
   transform: translateY(-50%);
   left:50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); 
   height:30vh;
   width:75vw;
   text-align: center;
   /* background-color: #cfd1f9; */
-  font-size: 4vh;
+  font-size: 2vw;
   font-family: 'Century Gothic';
 }
 #front-square{
   width:18vw;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   margin-left: 75vw;
   margin-top: 90vh;
   opacity:40%;
+}
+#front-para #front-part2{
+  /* height:200vh; */
+  /* background-color: #ff9898; */
+  margin: 15vh 0vw;
+  padding:6vh;
+}
+#part2-heading{
+  font-family: 'Century Gothic';
+  font-weight: bold;
+  font-size: 5.5vh;
+  margin-bottom: 2vh;
+}
+#offer-bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height:68vh; */
+  width:100%;
+  padding:2vh 4vw;
+  margin-top: 2vh;
+  border-radius: 2vw;
+}
+#offer-bg h1{
+  padding:0.6vh 2.5vw;
+  background: linear-gradient(90deg,rgb(86, 86, 86),rgb(40, 40, 40));
+  color:rgb(255, 255, 255);
+  border-radius: 2vw;
+  box-shadow: 0vw 0vw 1.5vw rgb(226, 226, 226);
+}
+#front-part2 img{
+  width:26vw;
+  border-radius: 1vw;
+  margin:4vh 2vw 2vh 2vw;
+  opacity:0;
+  animation: offer-image-move ease-in-out 8s infinite;
+}
+@keyframes offer-image-move{
+  0%{
+    margin-left: 0vw;
+    opacity: 100%;
+    filter:blur(0vw);
+  }
+
+  30%{
+    margin-left: 20vw;
+    opacity:100%;
+    filter:blur(0vw);
+  }
+  70%{
+    margin-left: -20%;
+    opacity:100%;
+    filter:blur(0.3vw);
+  }
+  100%{
+    margin-left: 0vw;
+    opacity: 100%;
+    filter:blur(0);
+  }
+
+}
+#front-part2 p{
+  font-size: 1.6vw;
+  line-height: 6vh;
 }
 
 
@@ -170,7 +273,7 @@ body{
 #projects-heading{
   font-size: 2.5vw;
   font-weight: bold;
-  font-family: 'Heebo';
+  font-family: 'Century Gothic';
 }
 #project-bg{
   border-radius: 2vw;
@@ -210,6 +313,7 @@ body{
 #project #visit-btn{
   height:2.2vw;
   width:6vw;
+  font-size: 1vw;
   border-radius: 2vw;
   background-color: rgb(255, 255, 255);
   color:rgb(7, 7, 7);
@@ -226,17 +330,36 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height:40vh;
+  height: 35vh;
   gap:1.7vw;
+  margin:10vh 2vw 0vw 2vw;
 }
 #project #project-image{
   width:25vw;
   border-radius: 1.5vw;
   margin-bottom: 2vw;
   box-shadow: 0px 0px 6px rgb(212, 212, 212);
-  opacity:60%;
+  opacity:70%;
   transition: all 0.25s ease-in-out;
-  margin-bottom:5vw;
+  animation: project-image-move 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    scroll-behavior: smooth;
+  /* margin-bottom:5vw; */
+}
+@keyframes project-image-move{
+  0%{
+    opacity:0;
+    scale: 0;
+  }
+  30%{
+    opacity:0.5;
+    scale: 0.5;
+  }
+  100%{
+    opacity: 1;
+    scale:1;
+  }
 }
 #project #project-image:hover{
   opacity:100%;
@@ -244,90 +367,86 @@ body{
   width:35vw;
 }
 #project #detail{
-  font-size: 1.3vw;
-  margin:6vw 5vw 3vw 5vw;
+  /* font-size: 1.3vw; */
+  margin:3vw 1.5vw 1.5vw 1.5vw;
+  padding:2vw 3vw;
+  border-radius: 2vw;
+  
 }
 #project #point{
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   margin:1vw 0vw;
   line-height: 4.3vh;
 }
 
 
-/* ABOUT ME */
-#about{
-  height:60vw;
-  width:100%;
-  padding:20vh 1vw;
-  position:relative;
-  background:linear-gradient(160deg,rgb(167, 254, 236) 6em,white 44em);
-}
-#about-right-circle{
-  width:20vw;
-  position: absolute;
-  left:70%;
-  opacity:70%;
-}
-#about-left-circle{
-  width:8vw;
-  position: absolute;
-  left:2.5%;
-  top:180%;
-  opacity:20%;
-  filter:blur(0.5)
-}
-#about #who-i-am{
-  /* text-center text-3xl font-bold font-'Heebo; */
-  text-align: center;
-  font-size: 2.7vw;
-  font-weight: bold;
-  font-family: 'Heebo';
-}
-#about-para{
-  font-size: 1.8vw;
-  line-height:7vh;
-  font-family: 'Century Gothic';
-  margin:1vw 20vw;
-  position: absolute;
-  z-index: 3;
-}
-
 /* SKILLS */
 #skills{
-  padding:0vw 4vw 8vh 4vw;
-  height:165vh;
+  padding:15vw 4vw 8vh 4vw;
+  /* height:180vh; */
+  background:linear-gradient(160deg,rgb(167, 254, 236) 6em,white 44em);
   /* flex-wrap: wrap; */
 }
 #skills-heading{
   font-size: 2.7vw;
   font-weight: bold;
-  font-family: 'Heebo';
+  font-family: 'Century Gothic';
   text-align: center;
 }
 #skill{
-  height:40vh;
+  /* height:50vh; */
   margin:10vh 0vw;
 }
 #skill #logo-div{
   height:15vh;
 }
 #skill #logo{
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   width:4.7vw;
+  animation: skill-logo-move linear 1.5s infinite;
+}
+#skill #react-logo{
+  margin-bottom: 5vh;
+  width:4.7vw;
+  animation: react-logo-move linear 2.8s infinite;
+}
+@keyframes react-logo-move{
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
+}
+
+@keyframes skill-logo-move {
+  0%{
+    rotate:10deg;
+  }
+  33%{
+    rotate: 0deg;
+  }
+  55%{
+    rotate:-10deg;
+  }
+  100%{
+    rotate: 10deg;
+  }
 }
 #skill #next-logo{
-  width:7vw;
-  margin-bottom: 2vh;
+  width:5.5vw;
+  margin-bottom: 4vh;
   margin-top: 1.3vh;
+  animation: skill-logo-move linear 1.5s infinite;
 }
 #skill #para{
   width:21vw;
-  height:23vw;
+  /* height:23vw; */
   padding:2vw;
   line-height: 5vh;
   font-size: 1.3vw;
   font-family: 'Century Gothic';
-  border-radius: 0.8vw;
+  border-radius: 1vw;
   background-color:rgb(255, 255, 255);
   box-shadow: 0vw 0vw 1vw rgb(228, 228, 228);
   cursor: pointer;
@@ -336,14 +455,54 @@ body{
 #skill #para:hover{
   box-shadow: 0vw 0vw 1vw rgb(211, 211, 211);
   background-color:rgb(255, 255, 255);
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
+
+/* ABOUT ME */
+#about{
+  /* height:70vw; */
+  width:100%;
+  padding:20vh 1vw 0vh 1vw;
+  position:relative;
+  background:linear-gradient(160deg,rgb(167, 254, 236) 6em,white 44em);
+}
+#about-right-circle{
+  width:20vw;
+  position: absolute;
+  left:70%;
+  opacity:50%;
+}
+#about-left-circle{
+  width:8vw;
+  position: absolute;
+  /* left:2.5%;
+  bottom:20%; */
+  margin-bottom: 10vh;
+  opacity:20%;
+  filter:blur(0.5)
+}
+#about #who-i-am{
+  /* text-center text-3xl font-bold font-'Heebo; */
+  text-align: center;
+  font-size: 2.7vw;
+  font-weight: bold;
+  font-family: 'Century Gothic';
+}
+#about-para{
+  font-size: 1.6vw;
+  line-height:6.1vh;
+  font-family: 'Century Gothic';
+  margin:1vw 15vw;
+  /* position: absolute; */
+  z-index: 3;
+}
+
 
 /* CONTACT */
 #contact{
-  height:80vh;
+  height:70vh;
   width:100%;
-  padding:24vh 4vw 4vh 4vw;
+  padding:24vh 4vw 0vh 4vw;
   background: linear-gradient(white,rgb(183, 249, 236));
 }
 #contact-heading{
@@ -352,25 +511,296 @@ body{
 }
 #accounts-div{
   background-color: rgba(255, 255, 255, 0.676);
-  padding: 6vh 6vw;
+  height:20vh;
+  padding: 2vh 6vw;
   margin: 0vh 8vw;
   border-radius: 1vw;
 }
-
 #account{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
+  height:10vh;
+  margin:0vh 4vw;
   gap:0.6vw;
   font-family: 'Century Gothic';
 }
-#contact #logo{
-  width:2.2vw;
+#account h1{
+  font-size: 1.2vw;
+}
+#account #logo{
+  width:2.3vw;
+}
+#account #logo:hover{
+  rotate:360deg;
+  transition: 0.8s;
+  
 }
 
-@media (maxwidth:200px){
-  #account h1{
-      font-size: 1vw;
+
+
+@media (max-width:360px)
+{
+  #navbar #bg{
+    display: none;
+    background-color: green;
   }
+  #navbar{
+    /* gap: 50vw; */
+    justify-content: space-between;
+    /* margin-top: 5vh; */
+    padding:0vh 6vw 0vh 8vw;
+    /* position: fixed; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0vw 0vw 4vw rgb(183, 183, 183);
+    height:11vh;
+    z-index: 8;
+    width:100%;
+  }
+  #menu-button{
+    display: block;
+  }
+  #navbar #resume-button{
+    width:16.5vh;
+    height:5.2vh;
+    font-size: 2.2vh;
+    border-radius: 10vh;
+  }
+  #menu{
+    display: none;
+    height:29vh;
+    width:100%;
+    position: absolute;
+    box-shadow: 0vw 0vw 4vw rgb(147, 147, 147);
+    z-index: 7;
+    /* top:8.7%; */
+    padding:2vh 0vw;
+    margin-bottom: 2vh;
+    text-align: center;
+    /* background-color: rgba(158, 240, 236, 0); */
+    animation: menu-move 0.3s;
+  }
+  @keyframes menu-move{
+    from{
+      margin-top: -20vh;
+    }
+    to{
+      margin-top: 0vh;;
+    }
+  }
+  #menu ul{
+    margin-top: 9.7vh;
+    box-shadow: 0vw 0vw 4vw rgb(172, 172, 172);
+  }
+#menu li{
+  /* height:3vh; */
+  font-size: 3vh;
+  width:100%;
+  padding:0.8vh 6vh;
+  margin-bottom: 0.5vh;
+  background-color: rgb(255, 255, 255);
+};
+
+  #front-page{
+    height:35vh;
+  }
+  #front-right-circle{
+    width:36vw;
+    right:10%;
+    top:-1.2vw;
+  }
+  #front-name-photo{
+    top:20vh;
+    padding:0vh 0vw;
+    width:70vw;
+    justify-content: center;
+  }
+  #profile{
+    width:35vw;
+  }
+  #hello,#name{
+    font-size:6.5vw;
+    margin:1.5vh 0vw;
+    width:45vw;
+    line-height: 5vh;
+  }
+  #welcome{
+    font-size: 4.8vw;
+    line-height: 4vh;
+  }
+  #front-para{
+    font-size: 4.5vw;
+    line-height: 6vh;
+  }
+  #front-part2{
+    padding:2vh 0vw;
+  }
+  #part2-heading{
+    font-size: 7vw;
+  }
+  #offer-bg{
+    /* height:60vh; */
+    margin:0vw;
+    padding:2vh 0vw;
+    transform: scale(1.4);
+  }
+  
+  #offer-bg h1{
+    font-size: 2.7vw;
+    height:5.5vw;
+    padding:0vw 3vw;
+    display: flex; justify-content: center; align-items: center;
+    border-radius: 5vw;
+    margin-top: 4vh;
+  }
+  #offer-bg img{
+    width:40vw;
+    margin:4vh 2vw;
+  }
+
+  #front-part2 p{
+    font-size: 4.4vw;
+    line-height: 4.2vh;
+    margin:3vh 0vw;
+    width:100%;
+
+  }
+  #front-part2 #heading{
+    padding:0vw;
+    /* text-align: center; */
+  }
+  #contact{
+    margin-top: 10vh;
+    height:75vh;
+  }
+  #contact-heading {
+    font-size: 5vw;
+  }
+  #accounts-div{
+    height:10vh;
+    flex-direction: column;
+    align-items: center;
+    gap:2vh;
+    background:none;
+  }
+  #account{
+    height:8vh;
+    flex-direction: row;
+    gap:2vw;
+    justify-content: start;
+    align-items: center;
+  }
+  #account #logo{
+    width:5.5vw;
+  }
+  #account h1{
+    font-size:3vw;
+  }
+
+  #projects{
+    padding:2vh;
+    /* position: fixed; */
+  }
+  #projects-heading{
+    font-size: 5vh;
+  }
+  #images-div{
+    flex-direction: column;
+    height:95vh;
+    margin-top: 4vh;
+  }
+  #project{
+    /* height:120vh; */
+    width:80vw;
+  }
+  #projects #heading{
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  #project #title-div{
+    height:8vh;
+  }
+  #project #title{
+    font-size: 3vw;
+    border-radius: 10vw;
+    line-height: 2vh;
+    padding: 1vh 2vh;
+  }
+  #project #project-image{
+    width:65vw;
+    animation: project-image-move 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    scroll-behavior: smooth;
+  }
+  @keyframes project-image-move{
+    from{
+      opacity:0;
+      scale: 0;
+    }
+    to{
+      opacity: 1;
+      scale:1;
+    }
+  }
+
+  #project #visit-btn{
+    font-size: 3vw;
+    height: 3vh;
+    width: 12vw;
+    border-radius: 5vw;
+  }
+  #project #detail{
+    margin:3vh 2vw 2vw 2vw;
+  }
+  #project #point{
+    font-size: 2.5vw;
+    line-height: 3vh;
+  }
+
+  #skills{
+    /* height: 305vh; */
+    padding-top: 25vh;
+    
+  }
+  #skill{
+    margin:0vh 0vw;
+  }
+  #skills-box{
+    flex-direction: column;
+  }
+  #skills-heading{
+    font-size: 5.5vh;
+    font-family: 'Century Gothic';
+  }
+  #skill #logo{
+    width:9vh;
+  }
+  #skill #react-logo{
+    width:9vh;
+  }
+  #skill #next-logo{
+    width:11vh;
+    margin-top: 6vh;
+  }
+  #skill #para{
+    width:70vw;
+    padding:6vw 5vw;
+    font-size: 2.6vh;
+    text-align: center;
+    box-shadow: 0vw 0vw 3vw rgb(204, 204, 204);
+    border-radius: 3vw;
+  }
+  #about{
+    /* height:150vh; */
+    padding-top: 10vh;
+  }
+  #about #who-i-am{
+    font-size: 7vw;
+  }
+  #about-para{
+    font-size: 3vh;
+    z-index: 1;
+  }
+
 }

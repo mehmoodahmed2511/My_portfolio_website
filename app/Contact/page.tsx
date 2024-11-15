@@ -4,10 +4,12 @@ import Link from "next/link"
 export default function Contact() {
     return (
         <>
+        
             <div id="contact">
                 <h1 id="contact-heading" className="text-center">Let's Connect!</h1>
+                <img id="about-left-circle" src="/about left circle.png" alt="" />
                 <br /><br /><br /><br />
-                <div id="accounts-div" className="flex justify-center items-center gap-24">
+                <div id="accounts-div" className="flex justify-center items-center">
 
                     <Link href="https://www.linkedin.com/in/muhammad-mehmood-ahmed-bb119424a/">
                         <div id="account">
@@ -15,7 +17,6 @@ export default function Contact() {
                             <h1>Linkedin</h1>
                         </div>
                     </Link>
-
 
                     <Link href="https://github.com/mehmoodahmed2511">
                         <div id="account">
