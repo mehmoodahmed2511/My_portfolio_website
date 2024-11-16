@@ -174,10 +174,9 @@ body{
   transform: translateY(-50%);
   left:50%;
   transform: translateX(-50%); 
-  height:30vh;
+  /* height:28vh; */
   width:75vw;
   text-align: center;
-  /* background-color: #cfd1f9; */
   font-size: 2vw;
   font-family: 'Century Gothic';
 }
@@ -192,7 +191,7 @@ body{
 #front-para #front-part2{
   /* height:200vh; */
   /* background-color: #ff9898; */
-  margin: 15vh 0vw;
+  margin: 0vw 0vw;
   padding:6vh;
 }
 #part2-heading{
@@ -500,7 +499,7 @@ body{
 
 /* CONTACT */
 #contact{
-  height:70vh;
+  height:37vw;
   width:100%;
   padding:24vh 4vw 0vh 4vw;
   background: linear-gradient(white,rgb(183, 249, 236));
@@ -538,19 +537,16 @@ body{
 }
 
 
-
-@media (max-width:360px)
+/* 
+@media (max-width: 360px)
 {
   #navbar #bg{
     display: none;
     background-color: green;
   }
   #navbar{
-    /* gap: 50vw; */
     justify-content: space-between;
-    /* margin-top: 5vh; */
     padding:0vh 6vw 0vh 8vw;
-    /* position: fixed; */
     background-color: rgb(255, 255, 255);
     box-shadow: 0vw 0vw 4vw rgb(183, 183, 183);
     height:11vh;
@@ -573,11 +569,9 @@ body{
     position: absolute;
     box-shadow: 0vw 0vw 4vw rgb(147, 147, 147);
     z-index: 7;
-    /* top:8.7%; */
     padding:2vh 0vw;
     margin-bottom: 2vh;
     text-align: center;
-    /* background-color: rgba(158, 240, 236, 0); */
     animation: menu-move 0.3s;
   }
   @keyframes menu-move{
@@ -593,8 +587,7 @@ body{
     box-shadow: 0vw 0vw 4vw rgb(172, 172, 172);
   }
 #menu li{
-  /* height:3vh; */
-  font-size: 3vh;
+  font-size: 2.8vh;
   width:100%;
   padding:0.8vh 6vh;
   margin-bottom: 0.5vh;
@@ -639,7 +632,6 @@ body{
     font-size: 7vw;
   }
   #offer-bg{
-    /* height:60vh; */
     margin:0vw;
     padding:2vh 0vw;
     transform: scale(1.4);
@@ -667,7 +659,6 @@ body{
   }
   #front-part2 #heading{
     padding:0vw;
-    /* text-align: center; */
   }
   #contact{
     margin-top: 10vh;
@@ -699,7 +690,6 @@ body{
 
   #projects{
     padding:2vh;
-    /* position: fixed; */
   }
   #projects-heading{
     font-size: 5vh;
@@ -710,7 +700,6 @@ body{
     margin-top: 4vh;
   }
   #project{
-    /* height:120vh; */
     width:80vw;
   }
   #projects #heading{
@@ -759,7 +748,6 @@ body{
   }
 
   #skills{
-    /* height: 305vh; */
     padding-top: 25vh;
     
   }
@@ -792,7 +780,6 @@ body{
     border-radius: 3vw;
   }
   #about{
-    /* height:150vh; */
     padding-top: 10vh;
   }
   #about #who-i-am{
@@ -800,6 +787,293 @@ body{
   }
   #about-para{
     font-size: 3vh;
+    z-index: 1;
+  }
+} */
+
+
+
+
+
+@media (max-width:540px)
+{
+  #navbar #bg{
+    display: none;
+    background-color: green;
+  }
+  #navbar{
+    /* gap: 50vw; */
+    justify-content: space-between;
+    /* margin-top: 5vh; */
+    padding:0vh 6vw 0vh 8vw;
+    /* position: fixed; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0vw 0vw 4vw rgb(183, 183, 183);
+    height:20vw;
+    z-index: 8;
+    width:100%;
+  }
+  #menu-button{
+    display: block;
+    transform: scale(2.2);
+  }
+  #navbar #resume-button{
+    width:30vw;
+    height:8vw;
+    font-size: 3.6vw;
+    border-radius: 10vh;
+    padding: 1.2vw;
+  }
+  #menu{
+    display: none;
+    height:35vw;
+    width:100%;
+    position: absolute;
+    z-index: 7;
+    top:10.4%;
+    padding:2.7vw 0vw;
+    margin-bottom: 2vh;
+    text-align: center;
+    /* background-color: rgba(158, 240, 236, 0); */
+    animation: menu-move 0.3s;
+  }
+  @keyframes menu-move{
+    from{
+      margin-top: -20vh;
+    }
+    to{
+      margin-top: 0vh;;
+    }
+  }
+  #menu ul{
+    /* margin-top: 10.6vh; */
+    box-shadow: 0vw 0vw 12vw rgb(60, 252, 223);
+  }
+#menu li{
+  /* height:3vh; */
+  font-size: 5.3vw;
+  width:100%;
+  padding: 1vw 6vh;
+  margin-bottom: 1.2vw;
+  background-color: rgb(255, 255, 255);
+};
+
+  #front-page{
+    height:50vw;
+  }
+  #front-right-circle{
+    width:38vw;
+    right:9.2%;
+    top:6.8vh;
+  }
+  #front-name-photo{
+    top: 45vw;
+    padding:0vh 0vw;
+    height:60vw;
+    width:70vw;
+
+    justify-content: center;
+  }
+  #profile{
+    width:38vw;
+  }
+  #hello,#name{
+    font-size:7.5vw;
+    margin:5vw 0vw;
+    width:45vw;
+    line-height: 9vw;
+  }
+  #welcome{
+    font-size: 5.2vw;
+    line-height: 7.5vw;
+  }
+  #front-para{
+    font-size: 5.5vw;
+    line-height: 9vw;
+    top:130vw;
+    /* margin-top: 6vw; */
+  }
+  #front-part2{
+    padding:4vw 0vw;
+    margin:2vw 0vw;
+  }
+  #part2-heading{
+    font-size: 8vw;
+  }
+  #offer-bg{
+    /* height:60vh; */
+    margin:0vw;
+    padding:4vw 0vw;
+    /* transform: scale(1.4); */
+  }
+  
+  #offer-bg h1{
+    font-size: 4vw;
+    height:8vw;
+    width:50vw;
+    /* padding:4vw 4.8vw; */
+    display: flex; justify-content: center; align-items: center;
+    border-radius: 5vw;
+    margin-top: 2vw;
+  }
+  #offer-bg img{
+    width:60vw;
+    margin:8vw 2vw;
+  }
+
+  #front-part2 p{
+    font-size: 5vw;
+    line-height: 8vw;
+    margin:4vw 0vw;
+    width:140%;
+    margin-left: -10vw;
+    }
+  #front-part2 #heading{
+    padding:0vw;
+    /* text-align: center; */
+  }
+  #contact{
+    margin-top: 8vh;
+    height:62vh;
+  }
+  #contact-heading {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  #accounts-div{
+    height:10vh;
+    flex-direction: column;
+    align-items: center;
+    gap:1vw;
+    background:none;
+  }
+  #account{
+    height:12vw;
+    flex-direction: row;
+    gap:2vw;
+    justify-content: start;
+    align-items: center;
+  }
+  #account #logo{
+    width:5.5vw;
+  }
+  #account h1{
+    font-size:4vw;
+  }
+
+  #projects{
+    padding:2vh;
+    padding-top: 17vw;
+    /* position: fixed; */
+
+  }
+  #projects-heading{
+    font-size: 5vh;
+    margin-bottom: 6vw;
+  }
+  #images-div{
+    flex-direction: column;
+    height: 130vw;
+    margin-top: 6vw;
+  }
+  #project{
+    /* height:120vh; */
+    width:80vw;
+  }
+  #projects #heading{
+    font-size: 4vh;
+    font-weight: bold;
+  }
+  #project #title-div{
+    height:7vh;
+  }
+  #project #title{
+    font-size: 3.2vw;
+    border-radius: 10vw;
+    line-height: 2vh;
+    padding: 1vh 2vh;
+  }
+  #project #project-image{
+    width:65vw;
+    animation: project-image-move 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    scroll-behavior: smooth;
+  }
+  @keyframes project-image-move{
+    from{
+      opacity:0;
+      scale: 0;
+    }
+    to{
+      opacity: 1;
+      scale:1;
+    }
+  }
+
+  #project #visit-btn{
+    font-size: 3vw;
+    height: 3vh;
+    width: 12vw;
+    border-radius: 5vw;
+  }
+  #project #detail{
+    margin:3vh 2vw 2vw 2vw;
+  }
+  #project #point{
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+
+  #skills{
+    /* height: 305vh; */
+    padding-top: 40vw;
+    
+  }
+  #skill{
+    margin:4vw 0vw;
+  }
+  #skills-box{
+    flex-direction: column;
+    gap:10vw;
+  }
+  #skills-heading{
+    font-size: 9vw;
+    font-family: 'Century Gothic';
+  }
+  #skill #logo{
+    width:15vw;
+  }
+  #skill #logo-div{
+    margin-bottom: -5vw;
+    height:25vw;
+  }
+  #skill #react-logo{
+    width:15vw;
+  }
+  #skill #next-logo{
+    width:20vw;
+    margin-top: 4vw;
+  }
+  #skill #para{
+    width:65vw;
+    padding:6vw 5vw;
+    font-size: 4.5vw;
+    text-align: center;
+    box-shadow: 0vw 0vw 3vw rgb(204, 204, 204);
+    border-radius: 3vw;
+    line-height: 8vw;
+  }
+  #about{
+    /* height:150vh; */
+    padding-top: 30vw;
+  }
+  #about #who-i-am{
+    font-size: 9vw;
+  }
+  #about-para{
+    font-size: 5vw;
+    line-height: 8vw;
     z-index: 1;
   }
 

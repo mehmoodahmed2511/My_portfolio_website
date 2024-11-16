@@ -1,5 +1,5 @@
 "use client"
-import {useState} from "react"
+import { useState } from "react"
 import Link from "next/link"
 import Navbar from "@/app/Navbar/page"
 import Projects from "@/app/Projects/page"
@@ -7,7 +7,7 @@ import About from "@/app/Skills/page"
 import Contact from "@/app/Contact/page"
 
 export default function LandingPage() {
-    
+
 
     return (
         <div>
@@ -25,7 +25,7 @@ export default function LandingPage() {
                     <img id="profile" src="/profile.png" alt="" />
                 </div>
 
-                <div id="front-para"><p>Front-end Web Developer,<br /> My aim is to develop
+                <div id="front-para"><p>I am a Front-end Web Developer,<br />    My aim is to develop
                     <span className="font-bold text-gray-600"> Innovative </span>
                     and
                     <span className="font-bold text-gray-600"> Dynamic</span> Websites using Cutting-edge Tools and transform the websites into realistic experiences.</p>
