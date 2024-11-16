@@ -14,7 +14,7 @@ export default function LandingPage() {
             <div id="front-page">
 
                 <img id="front-left-circle" src="/front left circle.png" alt="" />
-                <img id="front-right-circle" src="/front right circle.png" alt="" />
+                {/* <img id="front-right-circle" src="/front right circle.png" alt="" /> */}
 
                 <div id="front-name-photo">
                     <div id="front-name" className="flex flex-col justify-center items-start">

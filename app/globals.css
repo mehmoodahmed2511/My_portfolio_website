@@ -112,22 +112,6 @@ body{
       opacity:0%;
   }
 }
-#front-right-circle{
-  position: absolute;
-  width:22vw;
-  opacity:40%;
-  margin-left: 59.6vw;
-  margin-top: 28.8vh;
-  /* animation: front-right-circle-move 10s linear infinite; */
-}
-@keyframes front-right-circle-move{
-  from{
-      rotate: 0deg;
-  }
-  to{
-      rotate:1200deg;
-  }
-}
 #front-name-photo{
   display: flex;
   justify-content: space-between;
@@ -170,14 +154,14 @@ body{
 
 #front-para{
   position: absolute;
-  top:73vh;
+  top:78vh;
   transform: translateY(-50%);
   left:50%;
   transform: translateX(-50%); 
   /* height:28vh; */
   width:75vw;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: 'Century Gothic';
 }
 #front-square{
@@ -858,20 +842,15 @@ body{
   background-color: rgb(255, 255, 255);
 };
 
-  #front-page{
+#front-page{
     height:50vw;
   }
-  #front-right-circle{
-    width:38vw;
-    right:9.2%;
-    top:6.8vh;
-  }
+  
   #front-name-photo{
     top: 45vw;
     padding:0vh 0vw;
     height:60vw;
     width:70vw;
-
     justify-content: center;
   }
   #profile{
@@ -901,7 +880,6 @@ body{
     font-size: 8vw;
   }
   #offer-bg{
-    /* height:60vh; */
     margin:0vw;
     padding:4vw 0vw;
     /* transform: scale(1.4); */
@@ -933,15 +911,18 @@ body{
     /* text-align: center; */
   }
   #contact{
-    margin-top: 8vh;
-    height:62vh;
-  }
+    /* margin-top: 12vw;
+    padding-top: 15vw;
+    height:75vw; */
+     /* margin-top: 4vw; */
+    height: 60vh;
+  } 
   #contact-heading {
     font-size: 5vw;
     font-weight: bold;
   }
   #accounts-div{
-    height:10vh;
+    height:15vw;
     flex-direction: column;
     align-items: center;
     gap:1vw;
@@ -958,7 +939,7 @@ body{
     width:5.5vw;
   }
   #account h1{
-    font-size:4vw;
+    font-size:4.2vw;
   }
 
   #projects{
@@ -1077,4 +1058,4 @@ body{
     z-index: 1;
   }
 
-}
+  }
