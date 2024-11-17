@@ -234,7 +234,7 @@ body{
 
 }
 #front-part2 p{
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   line-height: 6vh;
 }
 
@@ -296,7 +296,7 @@ body{
 #project #visit-btn{
   height:2.2vw;
   width:6vw;
-  font-size: 1vw;
+  font-size: 1.1vw;
   border-radius: 2vw;
   background-color: rgb(255, 255, 255);
   color:rgb(7, 7, 7);
@@ -326,7 +326,7 @@ body{
   transition: all 0.25s ease-in-out;
   animation: project-image-move 2s ease-in-out;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 50%;
     scroll-behavior: smooth;
   /* margin-bottom:5vw; */
 }
@@ -352,14 +352,14 @@ body{
 #project #detail{
   /* font-size: 1.3vw; */
   margin:3vw 1.5vw 1.5vw 1.5vw;
-  padding:2vw 3vw;
+  padding:1.5vw 2vw;
   border-radius: 2vw;
   
 }
 #project #point{
-  font-size: 1.4vw;
+  font-size: 1.2vw;
   margin:1vw 0vw;
-  line-height: 4.3vh;
+  line-height: 3.2vh;
 }
 
 
@@ -378,7 +378,7 @@ body{
 }
 #skill{
   /* height:50vh; */
-  margin:10vh 0vw;
+  margin:8vh 0vw;
 }
 #skill #logo-div{
   height:15vh;
@@ -427,7 +427,7 @@ body{
   /* height:23vw; */
   padding:2vw;
   line-height: 5vh;
-  font-size: 1.3vw;
+  font-size: 1.1vw;
   font-family: 'Century Gothic';
   border-radius: 1vw;
   background-color:rgb(255, 255, 255);
@@ -467,12 +467,12 @@ body{
 #about #who-i-am{
   /* text-center text-3xl font-bold font-'Heebo; */
   text-align: center;
-  font-size: 2.7vw;
+  font-size: 2.5vw;
   font-weight: bold;
   font-family: 'Century Gothic';
 }
 #about-para{
-  font-size: 1.6vw;
+  font-size: 1.4vw;
   line-height:6.1vh;
   font-family: 'Century Gothic';
   margin:1vw 15vw;
@@ -483,19 +483,19 @@ body{
 
 /* CONTACT */
 #contact{
-  height:37vw;
+  height:34vw;
   width:100%;
   padding:24vh 4vw 0vh 4vw;
   background: linear-gradient(white,rgb(183, 249, 236));
 }
 #contact-heading{
-  font-size: 2.3vw;
+  font-size: 2.1vw;
   font-family: 'Century Gothic';
 }
 #accounts-div{
-  background-color: rgba(255, 255, 255, 0.676);
-  height:20vh;
-  padding: 2vh 6vw;
+  background-color: rgb(173, 247, 231);
+  height:16vh;
+  padding: 1vh 6vw;
   margin: 0vh 8vw;
   border-radius: 1vw;
 }
@@ -509,7 +509,7 @@ body{
   font-family: 'Century Gothic';
 }
 #account h1{
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 #account #logo{
   width:2.3vw;

@@ -8,7 +8,7 @@ import LandingPage from "@/app/LandingPage/page"
 export default function Home() {
     return (
         <div>
-            <LandingPage/>
+            <LandingPage />
         </div>
     )
 }
