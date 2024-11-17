@@ -493,7 +493,7 @@ body{
   font-family: 'Century Gothic';
 }
 #accounts-div{
-  background-color: rgb(173, 247, 231);
+  background-color: rgb(230, 255, 250);
   height:16vh;
   padding: 1vh 6vw;
   margin: 0vh 8vw;
@@ -503,9 +503,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height:10vh;
   margin:0vh 4vw;
-  gap:0.6vw;
+  gap:0.4vw;
   font-family: 'Century Gothic';
 }
 #account h1{
